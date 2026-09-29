@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<meta name="theme-color" content="#152b2c">
+<meta name="theme-color" content="#fff4dc">
 <meta name="color-scheme" content="light">
 <meta name="description" content="2026년 9월 30일~10월 2일, 홍천 비발디파크 2박 3일 교육여행 학생용 오프라인 가이드북">
 <!-- Link previews are static so messaging crawlers do not need JavaScript. -->
@@ -55,6 +55,15 @@
 @media(max-width:370px){.day-intro{padding:18px 14px;grid-template-columns:minmax(0,1fr) 116px;gap:8px}.day-intro h3{font-size:23px}.weather-temps{gap:9px}.weather-temps b{font-size:19px}.day-intro .weather-tip{font-size:10px}.day-intro .day-number{font-size:9px}}
 @media(prefers-reduced-motion:reduce){.weather-sun,.weather-cloud,.weather-drop{animation:none!important}}
 @media print{.weather-sun,.weather-cloud,.weather-drop{animation:none!important}.day-weather{break-inside:avoid}}
+
+/* A bright departure morning, with quiet motion around readable text. */
+.hero{background:linear-gradient(125deg,#fff1d6 0%,#fff8e7 40%,#e2f3df 75%,#daf0ed 100%);color:#244c42}.hero:before{border-color:#b6d5b677;background:radial-gradient(circle,#ffe1a255,transparent 65%);animation:morning-bloom 9s ease-in-out infinite}.hero:after{border-color:#b6d5b677}.hero-top{color:#386457}.hero h1{color:#234c42}.hero h1 em{color:#3e7658}.hero .lead,.hero .trip-meta,.hero .trip-meta strong{color:#3b5c4d}.hero .pill{border-color:#a7bfa2;background:#fffdf666}.motion-button{background:#fffdf680;color:#365746;border-color:#a7bfa2}.ticket{background:#fffdf3;border-color:#b8cbb0;box-shadow:0 15px 42px #406c4b14}.ticket-main:after{background:radial-gradient(circle,#ffd88966,transparent 65%)}.clock-heading h2,.clock-tag,.clock-caption,.clock-foot{color:#48644d}.heart{color:#c9613c}.countdown{color:#244e3c;text-shadow:0 2px 0 #fff}.ticket-bottom{background:#e5eedb;border-top-color:#a1b394}.gather{color:#3e5747}.gather strong{color:#8c461d}.ticket-link{background:#345f47;color:#fffbed}.trip-progress .progress-meta{color:#41634c}.track{background:#d7e1ce}.fill{background:#56865a}.hero-route{color:#557457}.hero-route span+span:before{color:#a75f34}.art-label{box-shadow:3px 4px 0 #68846f55}.travel-art{filter:drop-shadow(0 14px 15px #426c4220)}.hero .spark{fill:#bc7730}.hero .spark.two{fill:#55936c}.art-wrap{animation:happy-float 6s ease-in-out infinite}.hero-sparkles{position:absolute;inset:0;pointer-events:none;overflow:hidden}.hero-sparkles i{position:absolute;width:9px;height:9px;left:5%;top:20%;border-radius:3px;background:#e3ae4c;opacity:.45;animation:happy-sparkle 7s ease-in-out infinite}.hero-sparkles i:nth-child(2){left:44%;top:8%;background:#7eaf83;animation-delay:-2s}.hero-sparkles i:nth-child(3){left:90%;top:68%;background:#d19361;animation-delay:-4s}.hero-sparkles i:nth-child(4){left:56%;top:88%;background:#5a9692;animation-delay:-1s}.hero-sparkles i:nth-child(5){left:96%;top:26%;background:#7eaf83;animation-delay:-5s}
+.forecast-tools{display:flex;flex-wrap:wrap;gap:9px;align-items:center;margin-bottom:12px}.forecast-tools button{min-height:44px;padding:9px 15px;border:1px solid #95ad91;border-radius:10px;background:#e5efdb;color:#294d34;font-size:13px;font-weight:700}.forecast-tools button:disabled{opacity:.6}.forecast-tools button:active{transform:scale(.98)}.forecast-tools #forecast-reset{background:#fffdf7}.weather-source a{text-decoration:underline;text-underline-offset:3px}.weather-status{font-size:12px;color:#4b634e;margin:0 0 16px}.weather-place{font-size:10px;color:#46614e;margin-top:5px;display:block}.weather-icon[data-kind="cloud"] .weather-sun,.weather-icon[data-kind="fog"] .weather-sun,.weather-icon[data-kind="snow"] .weather-sun,.weather-icon[data-kind="storm"] .weather-sun{display:none}.weather-icon[data-kind="fog"] .weather-cloud{opacity:.55}
+@keyframes morning-bloom{0%,100%{transform:scale(.95);opacity:.6}50%{transform:scale(1.05);opacity:1}}@keyframes happy-float{0%,100%{transform:translateY(0) rotate(-1deg)}50%{transform:translateY(-9px) rotate(1deg)}}@keyframes happy-sparkle{0%,100%{transform:translateY(7px) rotate(0deg);opacity:.2}50%{transform:translateY(-9px) rotate(60deg);opacity:.65}}
+@media(hover:hover) and (pointer:fine){.motion-button:hover{background:#e2efd9}.ticket-link:hover{background:#456f53}.forecast-tools button:hover{background:#d7e8c9}}
+@media(max-width:640px){.forecast-tools button{font-size:12px;padding:9px 12px}.weather-status{font-size:11px}}
+@media(prefers-reduced-motion:reduce){.hero:before,.art-wrap,.hero-sparkles i{animation:none!important}}
+@media print{.hero-sparkles,.forecast-tools{display:none!important}}
 </style>
 </head>
 <body>
@@ -67,7 +76,7 @@
 <header class="topbar"><div class="wrap nav-inner"><a class="brand" href="#top"><span class="brand-mark">V</span>우리의 2박 3일</a><nav class="nav-links" aria-label="가이드북 바로가기"><a href="#top">D-day</a><a href="#schedule">일정</a><a href="#checklist">준비물</a><a href="#notes">참고사항</a><a href="#memory">7가지 약속</a><a href="#goal">목표</a></nav></div></header>
 <main id="top">
 <noscript><div class="noscript">전체 일정과 안내는 아래에서 읽을 수 있어요. 실시간 타이머와 일정 탭은 JavaScript를 지원하는 브라우저에서 열면 작동합니다. 출발은 9/30 08:00, 교실 집합은 07:30입니다.</div></noscript>
-<section class="hero" aria-labelledby="hero-title"><div class="wrap hero-content">
+<section class="hero" aria-labelledby="hero-title"><div class="hero-sparkles" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i></div><div class="wrap hero-content">
 <div class="hero-top"><span class="eyebrow">2026 SCHOOL TRIP · GRADE 02</span><button class="motion-button" id="motion-toggle" type="button" aria-pressed="false" hidden>애니메이션 끄기</button></div>
 <div class="hero-grid"><div><div class="trip-meta">2026. 09. 30 수 — 10. 02 금 · <strong>홍천 비발디파크</strong></div><h1 id="hero-title">교실 밖에서,<br><em>우리의 가장<br>반짝이는 3일.</em></h1><p class="lead">설렘은 가득, 약속은 확실하게.<br>친구들과 함께 펼칠 2박 3일을 여기서 미리 만나보세요.</p><span class="pill">홍천비발디 2박3일 교육여행 학생용 가이드북</span></div>
 <div class="art-wrap" aria-hidden="true"><svg class="travel-art" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 330" fill="none">
@@ -92,7 +101,7 @@
 <div class="wrap"><div class="quick-strip"><div class="quick-item"><span class="quick-icon" aria-hidden="true">01</span><div><b>07:30, 교실에서 만나요</b>출발시간과 집합시간은 달라요</div></div><div class="quick-item"><span class="quick-icon" aria-hidden="true">02</span><div><b>수건 + 아쿠아슈즈 필수</b>오션월드 준비물 먼저 확인!</div></div><div class="quick-item"><span class="quick-icon" aria-hidden="true">03</span><div><b>함께 움직여요</b>최소 2명 이상, 가능하면 조별로</div></div></div>
 <section class="section" id="schedule" aria-labelledby="schedule-title"><div class="section-head"><div><span class="section-num">01 / OUR ITINERARY</span><h2 id="schedule-title">3일 동안, 이렇게 놀자.</h2></div><p class="muted small">날짜를 누르면 그날의 일정이 펼쳐져요.</p></div>
 <div class="tabs" id="schedule-tabs" role="tablist" aria-label="날짜별 교육여행 일정" hidden><button class="tab" role="tab" id="tab-day1" aria-selected="true" aria-controls="day1" tabindex="0" data-day="day1" type="button">1일차 <small>9/30 수</small></button><button class="tab" role="tab" id="tab-day2" aria-selected="false" aria-controls="day2" tabindex="-1" data-day="day2" type="button">2일차 <small>10/1 목</small></button><button class="tab" role="tab" id="tab-day3" aria-selected="false" aria-controls="day3" tabindex="-1" data-day="day3" type="button">3일차 <small>10/2 금</small></button><button class="tab" role="tab" id="tab-all" aria-selected="false" aria-controls="all-days" tabindex="-1" data-day="all" type="button">전체 보기 <small>2박 3일</small></button></div>
-<p class="weather-source">날씨는 9/29 제공된 예보 캡처 기준입니다. 실시간 자동 갱신은 아니며, 출발 전 최신 예보와 현장 안내를 확인해 주세요.</p>
+<div class="forecast-tools"><button id="forecast-refresh" type="button" hidden>↻ 최신 예보 확인</button><button id="forecast-reset" type="button" hidden>기본 예보로 보기</button></div><p class="weather-source">기본: 9/29 선생님이 제공한 최신 캡처 · 온라인 조회: <a href="https://open-meteo.com/" target="_blank" rel="noopener noreferrer">Open-Meteo</a> (<a href="https://creativecommons.org/licenses/by/4.0/" target="_blank" rel="noopener noreferrer">CC BY 4.0</a>)의 용인·홍천·가평 지역 일별 예보. 현재 관측값이 아니며, 활동 장소의 실제 날씨와 다를 수 있어요.</p><p class="weather-status" id="forecast-status" role="status">기본 예보 표시 중 · 버튼을 누르면 인터넷으로 여행 날짜의 예보를 확인해요.</p>
 <div id="all-days">
 <section id="day1" class="schedule-panel day1" aria-labelledby="day1-heading"><div class="day-card"><div class="day-intro"><div><div class="day-number">DAY 01 · WEDNESDAY</div><span class="pill">9월 30일 · 수요일</span><h3 id="day1-heading">설렘 가득,<br>에버랜드.</h3><p>함께 타고, 함께 웃고.<br>첫날부터 추억 한가득!</p></div><div class="day-weather" aria-label="1일차 날씨: 비 예보, 최저 14도, 최고 26도"><svg class="weather-icon" viewBox="0 0 120 100" aria-hidden="true"><g class="weather-sun" fill="none" stroke="#d98614" stroke-width="4" stroke-linecap="round"><path d="M60 11v7m0 58v7M24 47h7m58 0h7M35 22l5 5m40 40 5 5M35 72l5-5m40-40 5-5"/><circle cx="60" cy="47" r="22" fill="#ffc94b" stroke="#efa520"/></g><g class="weather-cloud"><path d="M32 69a15 15 0 0 1 1-30 22 22 0 0 1 41-5 18 18 0 0 1 15 35Z" fill="#f9fcff" stroke="#7e9cae" stroke-width="2"/></g><g stroke="#297db6" stroke-width="4" stroke-linecap="round"><path class="weather-drop" d="m40 77-3 7"/><path class="weather-drop delay" d="m59 78-3 7"/><path class="weather-drop delay2" d="m78 77-3 7"/></g></svg><span class="weather-label">비 예보</span><div class="weather-temps"><span class="weather-low">최저<b>14℃</b></span><span class="weather-high">최고<b>26℃</b></span></div><p class="weather-tip">우산 챙기기 · 미끄럼 주의</p></div><svg class="day-art" aria-hidden="true"><use href="#wheel" xlink:href="#wheel" xmlns:xlink="http://www.w3.org/1999/xlink"/></svg></div><ol class="timeline">
 <li class="important"><span class="time">07:30</span><div><strong>학교 교실 집합</strong><small>각 교실에서 대기 → 안내에 따라 예배당 이동, 기도 및 출발 모임</small></div></li>
@@ -101,11 +110,11 @@
 <li><span class="time">점심</span><div><strong>에버랜드 밀쿠폰으로 식사</strong><small>12,000원 밀쿠폰 이용 · 식사 후 충분히 쉬기</small></div></li>
 <li class="important"><span class="time">16:30</span><div><strong>스타벅스 근처 집결</strong><small>선생님이 안내한 정확한 위치에서 조원 확인</small></div></li>
 <li><span class="time">17:00</span><div><strong>에버랜드 출발</strong></div></li>
-<li><span class="time">17:30</span><div><strong>구우쿠우 경기광주점 저녁식사</strong></div></li>
+<li><span class="time">17:30</span><div><strong>쿠우쿠우 경기광주점 저녁식사</strong></div></li>
 <li><span class="time">20:30</span><div><strong>비발디파크 숙소 도착</strong><small>객실 배정 후 휴식 및 허용된 범위 내 자유시간</small></div></li>
 <li><span class="time">22:00</span><div><strong>취침 준비 및 점호</strong><small>점호 후 객실 간 이동 금지</small></div></li>
 </ol></div></section>
-<section id="day2" class="schedule-panel day2" aria-labelledby="day2-heading"><div class="day-card"><div class="day-intro"><div><div class="day-number">DAY 02 · THURSDAY</div><span class="pill">10월 1일 · 목요일</span><h3 id="day2-heading">짜릿한 루지,<br>시원한 물놀이.</h3><p>루지 두 번, 웃음은 무한 번.<br>밤에는 우리의 무대까지!</p></div><div class="day-weather" aria-label="2일차 날씨: 맑음, 최저 9도, 최고 21도"><svg class="weather-icon" viewBox="0 0 120 100" aria-hidden="true"><g class="weather-sun" fill="none" stroke="#d98614" stroke-width="4" stroke-linecap="round"><path d="M60 11v7m0 58v7M24 47h7m58 0h7M35 22l5 5m40 40 5 5M35 72l5-5m40-40 5-5"/><circle cx="60" cy="47" r="22" fill="#ffc94b" stroke="#efa520"/></g></svg><span class="weather-label">맑음</span><div class="weather-temps"><span class="weather-low">최저<b>9℃</b></span><span class="weather-high">최고<b>21℃</b></span></div><p class="weather-tip">가벼운 겉옷 · 물놀이 후 보온</p></div><svg class="day-art" aria-hidden="true"><use href="#wave" xlink:href="#wave" xmlns:xlink="http://www.w3.org/1999/xlink"/></svg></div><ol class="timeline">
+<section id="day2" class="schedule-panel day2" aria-labelledby="day2-heading"><div class="day-card"><div class="day-intro"><div><div class="day-number">DAY 02 · THURSDAY</div><span class="pill">10월 1일 · 목요일</span><h3 id="day2-heading">짜릿한 루지,<br>시원한 물놀이.</h3><p>루지 두 번, 웃음은 무한 번.<br>밤에는 우리의 무대까지!</p></div><div class="day-weather" aria-label="2일차 날씨: 맑음, 최저 9도, 최고 20도"><svg class="weather-icon" viewBox="0 0 120 100" aria-hidden="true"><g class="weather-sun" fill="none" stroke="#d98614" stroke-width="4" stroke-linecap="round"><path d="M60 11v7m0 58v7M24 47h7m58 0h7M35 22l5 5m40 40 5 5M35 72l5-5m40-40 5-5"/><circle cx="60" cy="47" r="22" fill="#ffc94b" stroke="#efa520"/></g></svg><span class="weather-label">맑음</span><div class="weather-temps"><span class="weather-low">최저<b>9℃</b></span><span class="weather-high">최고<b>20℃</b></span></div><p class="weather-tip">가벼운 겉옷 · 물놀이 후 보온</p></div><svg class="day-art" aria-hidden="true"><use href="#wave" xlink:href="#wave" xmlns:xlink="http://www.w3.org/1999/xlink"/></svg></div><ol class="timeline">
 <li><span class="time">06:30</span><div><strong>기상</strong><small>하루 준비 후 조식</small></div></li>
 <li><span class="time">아침</span><div><strong>조식</strong><small>이동·식사 시간은 현장 안내 확인</small></div></li>
 <li class="important"><span class="time">09:00</span><div><strong>곤돌라 · 루지체험 2회</strong><small>학급별 이동 · 조원들과 함께하기</small></div></li>
@@ -115,7 +124,7 @@
 <li><span class="time">저녁식사 후</span><div><strong>레크리에이션 &amp; 장기자랑</strong><small>진행 시각·장소는 현장 안내 확인</small></div></li>
 <li><span class="time">22:00</span><div><strong>취침 준비 및 점호</strong><small>내일을 위해 충분히 쉬어요</small></div></li>
 </ol></div></section>
-<section id="day3" class="schedule-panel day3" aria-labelledby="day3-heading"><div class="day-card"><div class="day-intro"><div><div class="day-number">DAY 03 · FRIDAY</div><span class="pill">10월 2일 · 금요일</span><h3 id="day3-heading">작은 유럽,<br>큰 추억.</h3><p>친구와 나란히 걷고,<br>건강하게 우리 학교로.</p></div><div class="day-weather" aria-label="3일차 날씨: 맑음, 최저 4도, 최고 20도"><svg class="weather-icon" viewBox="0 0 120 100" aria-hidden="true"><g class="weather-sun" fill="none" stroke="#d98614" stroke-width="4" stroke-linecap="round"><path d="M60 11v7m0 58v7M24 47h7m58 0h7M35 22l5 5m40 40 5 5M35 72l5-5m40-40 5-5"/><circle cx="60" cy="47" r="22" fill="#ffc94b" stroke="#efa520"/></g></svg><span class="weather-label">맑음</span><div class="weather-temps"><span class="weather-low">최저<b>4℃</b></span><span class="weather-high">최고<b>20℃</b></span></div><p class="weather-tip">쌀쌀한 아침 · 따뜻한 겉옷</p></div><svg class="day-art" aria-hidden="true"><use href="#village" xlink:href="#village" xmlns:xlink="http://www.w3.org/1999/xlink"/></svg></div><ol class="timeline">
+<section id="day3" class="schedule-panel day3" aria-labelledby="day3-heading"><div class="day-card"><div class="day-intro"><div><div class="day-number">DAY 03 · FRIDAY</div><span class="pill">10월 2일 · 금요일</span><h3 id="day3-heading">작은 유럽,<br>큰 추억.</h3><p>친구와 나란히 걷고,<br>건강하게 우리 학교로.</p></div><div class="day-weather" aria-label="3일차 날씨: 맑음, 최저 5도, 최고 20도"><svg class="weather-icon" viewBox="0 0 120 100" aria-hidden="true"><g class="weather-sun" fill="none" stroke="#d98614" stroke-width="4" stroke-linecap="round"><path d="M60 11v7m0 58v7M24 47h7m58 0h7M35 22l5 5m40 40 5 5M35 72l5-5m40-40 5-5"/><circle cx="60" cy="47" r="22" fill="#ffc94b" stroke="#efa520"/></g></svg><span class="weather-label">맑음</span><div class="weather-temps"><span class="weather-low">최저<b>5℃</b></span><span class="weather-high">최고<b>20℃</b></span></div><p class="weather-tip">쌀쌀한 아침 · 따뜻한 겉옷</p></div><svg class="day-art" aria-hidden="true"><use href="#village" xlink:href="#village" xmlns:xlink="http://www.w3.org/1999/xlink"/></svg></div><ol class="timeline">
 <li><span class="time">06:30</span><div><strong>기상 및 조식 준비</strong><small>조식 후 짐 정리 · 객실 물건과 카드키 확인</small></div></li>
 <li class="important"><span class="time">08:40</span><div><strong>숙소 출발</strong><small>두고 온 물건 없이, 조원 모두 함께!</small></div></li>
 <li><span class="time">09:30~11:30</span><div><strong>쁘띠프랑스 · 이탈리아마을</strong><small>정해진 경로를 따라 조별 관람</small></div></li>
@@ -275,6 +284,52 @@ function tripState(now) {
   function updateNavHeight() { document.documentElement.style.setProperty('--nav-height',nav.getBoundingClientRect().height+'px'); }
   updateNavHeight(); window.addEventListener('resize',updateNavHeight);
 })();
+</script>
+<script id="forecast-logic">
+'use strict';
+(function () {
+  var button=document.getElementById('forecast-refresh'), reset=document.getElementById('forecast-reset'), status=document.getElementById('forecast-status');
+  var cards=Array.prototype.slice.call(document.querySelectorAll('.day-weather'));
+  var originals=cards.map(function(c){return {html:c.innerHTML,label:c.getAttribute('aria-label')};});
+  var dates=['2026-09-30','2026-10-01','2026-10-02'], places=['용인 지역','홍천 지역','가평 지역'];
+  // Regional reference points returned by Open-Meteo geocoding, not device location.
+  var api='https://api.open-meteo.com/v1/forecast?latitude=37.29686,37.6918,37.83101&longitude=127.08042,127.8857,127.51059&daily=weather_code,temperature_2m_max,temperature_2m_min&timezone=Asia%2FSeoul&start_date=2026-09-30&end_date=2026-10-02';
+  var busy=false,lastSuccess=0;
+  var sun=cards[1].querySelector('.weather-icon').innerHTML;
+  var cloud='<g class="weather-cloud"><path d="M32 69a15 15 0 0 1 1-30 22 22 0 0 1 41-5 18 18 0 0 1 15 35Z" fill="#f9fcff" stroke="#7e9cae" stroke-width="2"/></g>';
+  var rain='<g stroke="#297db6" stroke-width="4" stroke-linecap="round"><path class="weather-drop" d="m40 77-3 7"/><path class="weather-drop delay" d="m59 78-3 7"/><path class="weather-drop delay2" d="m78 77-3 7"/></g>';
+  function condition(code) {
+    if(code===0||code===1)return {label:code===0?'맑음':'대체로 맑음',kind:'sun',tip:'일교차 대비 · 겉옷 챙기기'};
+    if(code===2||code===3)return {label:code===2?'구름 조금':'흐림',kind:code===2?'partial':'cloud',tip:'겉옷 챙기기 · 현장 날씨 확인'};
+    if(code===45||code===48)return {label:'안개',kind:'fog',tip:'이동 시 주변을 잘 살펴요'};
+    if([51,53,55,56,57,61,63,65,66,67,80,81,82].indexOf(code)!==-1)return {label:code>=80?'소나기 예보':'비 예보',kind:'rain',tip:'우산 챙기기 · 미끄럼 주의'};
+    if([71,73,75,77,85,86].indexOf(code)!==-1)return {label:'눈 예보',kind:'snow',tip:'보온 · 미끄럼 주의'};
+    if([95,96,97,99].indexOf(code)!==-1)return {label:'뇌우 예보',kind:'storm',tip:'선생님과 안전요원 안내를 따라요'};
+    throw Error('Unknown weather code');
+  }
+  function icon(c){return '<svg class="weather-icon" data-kind="'+c.kind+'" viewBox="0 0 120 100" aria-hidden="true">'+sun+(c.kind==='sun'?'':cloud)+(c.kind==='rain'?rain:'')+(c.kind==='snow'?'<g fill="#457ca0"><circle cx="39" cy="82" r="3"/><circle cx="59" cy="90" r="3"/><circle cx="79" cy="81" r="3"/></g>':'')+(c.kind==='storm'?'<path d="m63 70-14 16h11l-5 13 22-21H65l7-8Z" fill="#b67a00"/>':'')+'</svg>';}
+  reset.addEventListener('click',function(){if(busy)return;cards.forEach(function(c,i){c.innerHTML=originals[i].html;c.setAttribute('aria-label',originals[i].label);});reset.hidden=true;status.textContent='기본 예보 표시 중 · 9/29 선생님 제공 캡처 기준입니다.';});
+  button.addEventListener('click',function(){
+    if(busy)return;
+    if(lastSuccess && Date.now()-lastSuccess<300000){status.textContent='방금 예보를 확인했어요. 다시 조회하려면 5분 뒤에 눌러 주세요. 현재 표시된 예보를 유지합니다.';return;}
+    if(navigator.onLine===false){status.textContent='인터넷에 연결되지 않았어요. 현재 표시된 예보를 유지합니다.';return;}
+    var today=new Date(Date.now()+9*3600000).toISOString().slice(0,10);
+    if(today>'2026-10-02'){status.textContent='여행 일정이 지나 최신 예보 조회를 종료했어요. 표시된 정보는 여행 안내용으로 참고해 주세요.';return;}
+    busy=true;button.disabled=true;reset.disabled=true;button.textContent='예보 확인 중…';status.textContent='여행 날짜별 지역 예보를 불러오고 있어요.';
+    var controller=typeof AbortController!=='undefined'?new AbortController():null,timer;
+    var timeout=new Promise(function(_,reject){timer=setTimeout(function(){if(controller)controller.abort();reject(Error('Timeout'));},10000);});
+    Promise.race([fetch(api,controller?{signal:controller.signal}:{}).then(function(r){if(!r.ok)throw Error('API unavailable');return r.json();}),timeout]).then(function(data){
+      if(!Array.isArray(data)||data.length!==3)throw Error('Missing regions');
+      // Validate every region before changing any card, so partial failures preserve the page.
+      var values=data.map(function(region,i){var d=region.daily;if(!d||!Array.isArray(d.time))throw Error('Missing dates');var j=d.time.indexOf(dates[i]);if(j<0)throw Error('Missing trip date');var low=d.temperature_2m_min&&d.temperature_2m_min[j],high=d.temperature_2m_max&&d.temperature_2m_max[j],code=d.weather_code&&d.weather_code[j];if(typeof low!=='number'||typeof high!=='number'||!isFinite(low)||!isFinite(high)||low>high)throw Error('Invalid temperatures');return {low:Math.round(low),high:Math.round(high),condition:condition(code)};});
+      values.forEach(function(v,i){var c=cards[i];c.innerHTML=icon(v.condition)+'<span class="weather-label">'+v.condition.label+'</span><span class="weather-place">'+places[i]+' · '+dates[i].slice(5).replace('-','/')+'</span><div class="weather-temps"><span class="weather-low">최저<b>'+v.low+'℃</b></span><span class="weather-high">최고<b>'+v.high+'℃</b></span></div><p class="weather-tip">'+v.condition.tip+'</p>';c.setAttribute('aria-label',(i+1)+'일차 '+places[i]+' 예보: '+v.condition.label+', 최저 '+v.low+'도, 최고 '+v.high+'도');});
+      lastSuccess=Date.now();var stamp=new Date(lastSuccess+9*3600000).toISOString().slice(5,16).replace('T',' ');
+      status.textContent='Open-Meteo 예보 · '+stamp+' KST 확인 · 지역·제공처에 따라 기본 예보와 다를 수 있어요. 새로고침하면 기본 예보로 돌아갑니다.';reset.hidden=false;
+    }).catch(function(){status.textContent='최신 예보를 불러오지 못했어요. 현재 표시된 예보를 유지합니다. 인터넷 상태를 확인하고 다시 시도해 주세요.';}).then(function(){clearTimeout(timer);busy=false;button.disabled=false;reset.disabled=false;button.textContent='↻ 최신 예보 확인';});
+  });
+  if(typeof fetch==='function')button.hidden=false;
+})();
+
 </script>
 </body>
 </html>
